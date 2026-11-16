@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Changa:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gloria+Hallelujah&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&family=Salsa&family=Seymour+One&family=Sixtyfour&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: "DM Sans", serif;
+    color: white;
+    font-weight: 600;
+}
+body{
+    background-image: url(/pexels-omar-ramadan-1739260-5653376.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+/* utility class */
+.regular-txt{
+    font-weight: 400;
+}
+/* utility class end */
+.main-container{
+    z-index: 1;
+    width: 350px;
+    height: 560px;
+    background: linear-gradient(to top,rgb(0, 0 ,0 ,0.15),rgb(255,255,255,0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    padding: 50px 20px 0px 20px;
+    
+}
+
+/* input tag */
+.input-container{
+    padding-bottom: 20px;
+}
+.city-input{
+    width: 100%;
+    height: 35px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color:white;
+    background:rgb(0, 0, 0, 0.15);
+    transition: 0.25s border;
+
+}
+.city-input:focus{
+    border: 2px solid rgb(0, 0, 0, 0.15);
+}
+.city-input::placeholder{
+    color: rgb(255, 255, 255, 0.75);
+}
+
+/* search button */
+.search-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 55px;
+    color: white;
+    background:none;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+/*weather info */
+.weather-info{
+    margin:25px 20px 0px 0px;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.location-date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weather-summary-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-summary-img{
+    width: 120px;
+    height: 120px;
+}
+.weather-summary-info{
+    text-align: end;
+}
+.weather-condition-container{
+    display: flex;
+    justify-content: space-between;
+}
+.condition-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.condition-item i{
+    font-size: 30px;
+}
+.forecast-items-container{
+    display:flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 12px;
+}
+.forecast-items-container::-webkit-scrollbar{
+    height: 10px;
+}
+.forecast-items-container::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background: rgb(0, 0 ,0 ,0.15);
+    border-radius: 99px;
+}
+.forecast-item{
+    min-width: 70px;
+    background:rgb(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+.forecast-item:hover{
+    background: rgb(255,255,255,0.15);
+}
+.forecast-item img{
+    width: 40px;
+    height: 40px;
+}
+/* weather info end */
+
+/* section message */
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.section-message img{
+    height: 190px;
+    width: fit-content;
+}
+/* section message end */
